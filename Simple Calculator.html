@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <style>
+            *{
+                text-align: center;
+                background-color: rgba(221, 217, 217, 0.116);
+            }
+
+            header{
+                color:white;
+                background-color: rgb(143, 186, 235);
+            }
+
+            .digit{
+                background-color: rgb(182,238,160);
+            }
+            
+            #num1{
+                text-align:center;
+                background-color: rgb(204, 199, 195);
+                border-radius: 8px;
+            }
+
+            #num2{
+                text-align:center;
+                background-color: rgb(204, 199, 195);
+                border-radius: 8px;
+            }
+
+            button{
+                background-color: rgb(219, 132, 132);
+                font-size: 18px;
+                padding: 10px 25px;
+                border-radius: 10px;
+                margin: 25px;
+            }
+
+            button:hover{
+                background-color: darkviolet;
+            }
+
+            .result{
+                background-color: rgba(146, 219, 221, 0.644);
+            }
+
+            #result{
+                border-radius: 10px;
+                background-color: rgba(204, 196, 196, 0.877);
+                text-decoration: black;
+            }
+
+            footer{
+                background-color:rgb(116, 114, 114) ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Play with Numbers</h1>
+        </header>
+        
+        <div class="digit">
+            <h3>Enter First Number</h3>
+            <input id="num1">
+            <br>
+            <br>
+            <h3>Enter Second Number</h3>
+            <input id="num2">
+            <br>
+            <br>
+        </div>
+
+        <section>
+            
+            <button onclick="add()">Add</button>
+            <button onclick="sub()">Subtract</button>
+            <button onclick="multi()">Multiply</button>
+            <button onclick="div()">Divide</button>
+
+        <div class="result">
+            <br>
+            <h3>Your Answer</h3>
+            <input id="result">
+            <br>
+            <br>
+        </div>
+
+        <footer>
+            <h3> @2023 Designed , developed and produced by National Informatics Center</h3>
+        <br>
+        <br>
+        
+
+        <script>
+            function add()
+            {
+                var number1,number2,sum;
+
+                number1=parseInt(document.getElementById("num1").value);
+                number2=parseInt(document.getElementById("num2").value);
+
+                sum=number1+number2;
+                document.getElementById("result").value=sum;
+
+            }
+
+            function sub()
+            {
+                var number1,number2,subtact;
+
+                number1=parseInt(document.getElementById("num1").value);
+                number2=parseInt(document.getElementById("num2").value);
+
+                subtact=number1-number2;
+                document.getElementById("result").value=subtact;
+            }
+
+            function multi()
+            {
+                var number1,number2,multiply;
+
+                number1=parseInt(document.getElementById("num1").value);
+                number2=parseInt(document.getElementById("num2").value);
+
+                multiply=number1*number2;
+                document.getElementById("result").value=multiply;
+            }
+
+            function div()
+            {
+                var number1,number2,divide;
+
+                number1=parseInt(document.getElementById("num1").value);
+                number2=parseInt(document.getElementById("num2").value);
+
+                divide=number1/number2;
+                document.getElementById("result").value=divide;
+            }
+
+        </script>
+    </body>
+</html>
