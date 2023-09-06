@@ -1,0 +1,55 @@
+*{
+    text-align: center;
+    background-color: rgba(221, 217, 217, 0.116);
+}
+
+header{
+    color:white;
+    background-color: rgb(143, 186, 235);
+}
+
+.digit{
+    background-color: rgb(182,238,160);
+}
+
+
+
+#num1{
+    text-align:center;
+    background-color: rgb(204, 199, 195);
+    border-radius: 8px;
+    
+}
+
+#num2{
+    text-align:center;
+    background-color: rgb(204, 199, 195);
+    border-radius: 8px;
+}
+
+button{
+    background-color: rgb(219, 132, 132);
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+button:hover{
+    background-color: darkviolet;
+}
+
+.result{
+    background-color: rgba(146, 219, 221, 0.644);
+}
+
+#result{
+    border-radius: 10px;
+    background-color: rgba(204, 196, 196, 0.877);
+    text-decoration: black;
+}
+
+footer{
+    background-color:rgb(116, 114, 114) ;
+}
+
